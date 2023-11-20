@@ -40,12 +40,11 @@ class CalculatorTest extends TestCase
     public function testModulo(): void
         {
             $value = 10;
-            $expectedResult = 0;
 
             $calculator= new Calculator();
             $modulo = $calculator->isEven($value);
 
-            $this->assertTrue(false,
+            $this->assertTrue($modulo,
                 "La méthode modulo() ne fonctionne plus"
             );
         }
