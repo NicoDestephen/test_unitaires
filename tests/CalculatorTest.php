@@ -22,4 +22,31 @@ class CalculatorTest extends TestCase
             "La méthode sum() ne fonctionne plus :-("
         );
     }
+
+    public function testMuliplication(): void
+        {
+            $firstValue = 2;
+            $secondValue = 4;
+            $expectedResult = 8;
+
+            $calculator = new Calculator();
+            $muliplication = $calculator->multiplication($firstValue, $secondValue);
+
+            $this->assertSame($expectedResult, $muliplication,
+                "La méthode multiplication() ne fonctionne plus :-("
+            );
+        }
+
+    public function testModulo(): void
+        {
+            $value = 10;
+            $expectedResult = 0;
+
+            $calculator= new Calculator();
+            $modulo = $calculator->isEven($value);
+
+            $this->assertTrue(false,
+                "La méthode modulo() ne fonctionne plus"
+            );
+        }
 }
